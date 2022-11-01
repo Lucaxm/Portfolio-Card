@@ -1,0 +1,145 @@
+
+@import url(css/reset.css);
+@import url(css/menu.css);
+@import url(css/inicio.css);
+@import url(css/bio.css);
+@import url(css/contato.css);
+
+/* Fontes */
+@font-face {
+    font-family: menu1;
+    src: url(fonts/PressStart2P-Regular.ttf);
+}
+
+@font-face {
+    font-family: menu2;
+    src: url(fonts/Orbitron-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: menu3;
+    src: url(fonts/VT323-Regular.ttf);
+}
+
+@font-face {
+    font-family: menu4;
+    src: url(fonts/FrederickatheGreat-Regular.ttf);
+}
+
+@font-face {
+    font-family: default1;
+    src: url(fonts/SourceCodePro-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: default2;
+    src: url(fonts/RobotoMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: default3;
+    src: url(fonts/GloriaHallelujah-Regular.ttf);
+}
+
+@font-face {
+    font-family: default4;
+    src: url(fonts/ShadowsIntoLight-Regular.ttf);
+}
+
+@font-face {
+    font-family: bio1;
+    src: url(fonts/DancingScript-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: bio2;
+    src: url(fonts/GreatVibes-Regular.ttf);
+}
+
+@font-face {
+    font-family: bio3;
+    src: url(fonts/Cookie-Regular.ttf);
+}
+
+@font-face {
+    font-family: bio4;
+    src: url(fonts/Sacramento-Regular.ttf);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.8s;
+}
+
+.inicio_scroll , .bio_scroll, .contato_scroll {
+    height: 0.1px;
+}
+
+/* Teste com cards ao lado
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+*/
+
+/* Váriaveis do CSS */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color_card: linear-gradient(to top, rgba(211, 211, 211, 0.9), rgba(129, 100, 100, 0.9) );
+        --color1: rgb(211, 211, 211, 0.9);
+        --color2: rgb(128, 128, 128, 0.9);
+        --color_menu1: rgba(64, 58, 73, 0.85);
+        --color_menu2: rgb(28, 102, 240, 0.9);
+        /*
+        --font_menu: menu2;
+        --font_default: default2;
+        --font_bio: bio2;
+        */
+        --font_menu: default2;
+        --font_default: default2;
+        --font_bio: default2;
+    }
+
+    body {
+        background-image: url(images/background/galaxias.jpg);
+    }
+
+    #color_button2.auto {
+        border: 5px solid white;
+        color: white;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color_card: linear-gradient( 180.4deg,  rgba(188,120,236,0.9) -2.2%, rgba(29,133,163,0.9) 83.5% );
+        --color1: rgb(173, 216, 230, 0.9);
+        --color2: rgb(211, 211, 211, 0.9);
+        --color_menu1: rgba(64, 58, 73, 0.85);
+        --color_menu2: rgb(133, 49, 49, 0.7);
+        /*
+        --font_menu: menu1;
+        --font_default: default1;
+        --font_bio: bio1;
+        */
+        --font_menu: default2;
+        --font_default: default2;
+        --font_bio: default2;
+    }
+
+    body {
+        background-image: url(images/background/estrelas.jpg);
+    }
+
+    #color_button1.auto {
+        border: 5px solid white;
+        color: white;
+    }
+}

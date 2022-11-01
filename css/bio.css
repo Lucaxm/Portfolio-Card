@@ -1,0 +1,148 @@
+/* iPhone XR vertical */
+.section_bio {
+    align-items: center;
+    background-image: var(--color_card);
+    border-radius: 75px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    left: 0; 
+    margin: 80px auto 10px auto;
+    right: 0;
+    width: 97%;
+}
+
+.section_bio h2 {
+    font-family: var(--font_default);
+    font-size: 2.3em;
+    margin: 20px auto 10px auto;
+}
+
+.section_bio h3 {
+    font-family: var(--font_bio);
+    font-size: 1.1em;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin: 0 auto;
+    padding: 0 30px;
+    text-align: justify;
+}
+
+.foto_ilustrativa_bio {
+    background-image: url(../images/portfolio/codigo-note-cafe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px 25px;
+    height: 200px;
+    margin: 20px auto 40px auto;
+    width: 320px;
+}
+
+/* @media iPhone SE vertical */
+@media (max-width: 375px), (max-height: 720px) {
+
+    .section_bio {
+        margin-top: 62px;
+    }
+
+    .section_bio h2 {
+        font-size: 2.0em;
+        margin: 10px auto 5px auto;
+    }
+
+    .section_bio h3 {
+        font-size: 0.9em;
+    }
+
+    .foto_ilustrativa_bio {
+        height: 160px;
+        margin: 10px auto 30px;
+        width: 270px;
+    }
+}
+
+/* @media iPhone SE/XR horizontal */
+@media (max-width: 896px) and (max-height: 414px) {
+
+    .section_bio {
+        margin: 60px auto 40px auto;
+        width: 660px;
+    }
+
+    .section_bio h3 {
+        font-size: 1.1em;
+        margin-bottom: 18px;
+    }
+
+    .foto_ilustrativa_bio {
+        display: none;
+    }
+}
+
+/* @media iPad mini Vertical */
+@media (min-width: 897px), (min-height: 1024px) {
+
+    .section_bio {
+        margin: 100px auto 80px auto;
+        width: 500px;
+    }
+
+    .section_bio h3 {
+        font-size: 1.2em;
+    }
+
+}
+
+/* @media Laptop/iPad mini Horizontal */
+@media (min-width: 1024px) {
+
+    .section_bio {
+        margin: 100px auto 80px auto;
+        width: 500px;
+    }
+
+    .section_bio h3 {
+        font-size: 1.2em;
+    }
+
+}
+
+    /* @media Full HD */
+@media (min-width: 1440px) {
+
+    .section_bio {
+        margin: 100px auto 80px auto;
+        width: 500px;
+    }
+
+    .section_bio h2 {
+        font-size: 1.9em;
+    }
+
+    .section_bio h3 {
+        font-size: 1.2em;
+        margin: 10px auto 5px auto;
+    }
+
+    .foto_ilustrativa_bio {
+        height: 180px;
+        width: 340px;
+    }
+}
+
+/* @media 4K (beta) */
+@media (min-width: 2000px) {
+
+    .section_bio {
+        margin: 240px auto 160px auto;
+        padding: 40px;
+        width: 600px;
+    }
+
+    .section_bio h3 {
+        font-size: 2em;
+    }
+}

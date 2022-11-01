@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#310655">
+        <meta name="author" content="Lucaxm">
+        <meta name="description" content="Site portfólio de Lucas Alvarenga">
+        <meta name="keywords" content="portfolio, front-end, desenvolvedor, html, css, javascript">
+        <title>Lucas A.</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/card/foto_perfil1.jpeg">
+    </head>
+    <body>
+<!------HEADER E MENU-------------------------------------------------------------------->
+        <div class="inicio_scroll"><a name="inicio"></a></div>
+        <header>
+            <nav class="menu">
+                <ul class="menu_lista">
+                    <li>
+                        <a href="#inicio" class="menu_link">Início</a>
+                        <!--<a href="#" class="menu_link">Início</a>-->
+                    </li>
+                    <li>
+                        <a href="#bio" class="menu_link">Bio</a>
+                        <!--<a href="#" class="menu_link">Bio</a>-->
+                    </li>
+                    <li>
+                        <a href="#contato" class="menu_link">Contato</a>
+                        <!--<a href="#" class="menu_link">Contato</a>-->
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+<!----------SECTION INICIO----------------------------------------------------------------->
+            <section class="section_inicio">
+                <img src="images/card/foto_perfil_quadrada.jpeg" class="inicio_foto" alt="Avatar de Jonathas">
+                
+                <div class="inicio_info">
+                    <h2>Lucas Alvarenga</h2>
+                    <div class="inicio_buttons">
+                            <h4>Escolha um tema:</h4>
+                            <ul>
+                                <li><button id="color_button1" class="color_buttons auto">Estrelas</button></li>
+                                <li><button id="color_button2" class="color_buttons auto">Galaxias</button></li>
+                                <li><button id="color_button3" class="color_buttons">Nebulosa</button></li>
+                                <li><button id="color_button4" class="color_buttons">Terra</button></li>
+                            </ul>
+                    </div>
+                </div>
+
+                <div class="inicio_links">
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/lucaxm/" target="_blank" rel="noreferrer noopener">
+                                <img src="images/icons/linkedin-brands.svg" class="linkedin_icon" alt="Linkedin">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.github.com/lucaxm" target="_blank" rel="noreferrer noopener">
+                                <img src="images/icons/github-brands.svg" class="github_icon" alt="Github">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+<!----------SECTION BIO---------------------------------------------------------------->
+            <div class="bio_scroll"><a name="bio"></a></div>
+            <section class="section_bio">
+                <h2>Bio</h2>
+
+                <h3>
+                    Olá! 
+                    Meu nome é Lucas e tenho <strong id="idade">XX</strong> anos, moro atualmente no Rio de Janeiro.
+                    A vida inteira fui interessado e simpatizante da área de tecnologia, desde cedo buscando conhecer melhor e entender como as coisas funcionam.
+                    Trabalho bem em equipe e sou comprometido, adoro desafios.
+                    Estou focando meus esforços na área de front-end, com a meta de me tornar developer pleno o quanto antes. Estou me especializando atualmente no framework React!
+                    </h3>
+
+                <div class="foto_ilustrativa_bio"></div>
+            </section>
+        </main>
+<!----------SECTION CONTATO FOOTER----------------------------------------------------->
+        <div class="contato_scroll"><a name="contato"></a></div>
+        <footer>
+            <h2>Me envie uma mensagem!</h2>
+            <form id="form">
+                <div class="div_nome">
+                    <label for="f_nome" class="label_nome">Seu Nome:</label>
+                    <textarea cols="15" rows="1" id="f_nome" class="textarea_nome" required></textarea>
+                </div>
+                <div class="div_mensagem">
+                    <label for="f_mensagem" class="label_mensagem">Mensagem:</label>
+                    <textarea cols="25" rows="6" id="f_mensagem" class="textarea_mensagem" required></textarea>
+                </div>
+
+                <button type="submit" class="submit_mailto" id="submit">Enviar</button>
+            </form>
+            <h4>Lucas Alvarenga &copy 2022</h4>
+        </footer>
+        
+<!------SCRIPTS------------------------------------------------------------------------->
+        <script src="js/colors.js"></script> 
+        <script src="js/form.js"></script>
+        <script src="js/idade.js"></script>                                           
+    </body>
+</html>
