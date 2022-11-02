@@ -2,7 +2,7 @@
 
 document.getElementById('form').addEventListener("submit", (evento) => {
     evento.preventDefault();
-    window.location.href = "mailto:jonathasmrt@gmail.com?Subject=" + document.getElementById('f_nome').value + "&Body=" + document.getElementById('f_mensagem').value;
+    window.location.href = "mailto:lucas.alvarenga410@gmail.com?Subject=" + document.getElementById('f_nome').value + "&Body=" + document.getElementById('f_mensagem').value;
 })
 
 /* Montagem inicial
@@ -24,6 +24,6 @@ function value() {
 }
 
 function mailto (nome, mensagem) {
-    window.location.href = "mailto:jonathasmrt@gmail.com?Subject=" + nome + "&Body=" + mensagem;
+    window.location.href = "mailto:lucas.alvarenga410@gmail.com?Subject=" + nome + "&Body=" + mensagem;
 } 
 */
